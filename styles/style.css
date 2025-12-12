@@ -10,6 +10,7 @@
   background-attachment: fixed;
 }
 
+/*Шапка*/
 
 .header {
   min-block-size: 100vh;
@@ -19,6 +20,7 @@
   grid-template-rows: 1fr min-content 1fr;
 }
 
+/*Кнопки навигации*/
 
 .header__theme-menu-list {
   display: flex;
@@ -34,6 +36,7 @@
   background: transparent;
 }
 
+/*Действия на кнопки*/
 
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -53,6 +56,7 @@
   cursor: pointer;
 }
 
+/*РЕС*/
 
 .decorative__element {
   position: absolute;
@@ -80,6 +84,7 @@
   filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
 
+/* Стили углов*/
 
 .frame::before {
   position: absolute;
@@ -105,6 +110,7 @@
   margin: 20px;
 }
 
+/*Заголовок шапки*/
 
 .header__title {
   margin-left: -20px;
@@ -130,20 +136,23 @@
   align-self: center;
 }
 
+/*Дизайн заголовков всех секций*/
 
 .question__section-title {
   color: var(--btn-color);
   font-weight: 700;
-  line-height: 23.4px; 
+  line-height: 23.4px; /* 130% */
   font-size: var(--font-size);
 }
 
+/*Дизайн текста всех секций*/
 
 .question__section-answer-text {
   font-size: var(--font-size);
   color: var(--text-color);
 }
 
+/*Ссылки*/
 
 .question__section-answer-link {
   text-decoration: none;
@@ -162,6 +171,7 @@
   border: 1px solid var(--text-color);
 }
 
+/*Первая секция с вопросами*/
 
 .question__section__one {
   display: grid;
@@ -180,6 +190,7 @@
   padding-block-end: 10px;
 }
 
+/*Вторая секция с вопросами*/
 
 .question__section-two {
   padding-block-start: 80px;
@@ -201,6 +212,7 @@
   margin-block-end: 10px;
 }
 
+/*Третья секция с вопросами*/
 
 .question__section__fhree {
   display: grid;
@@ -222,6 +234,7 @@
   padding-block-start: 10px;
 }
 
+/*Секция с картинками*/
 
 .question__section__image {
   padding-block-end: 60px;
@@ -267,6 +280,7 @@
   grid-column: 2 / 4;
 }
 
+/*Подвал*/
 
 .footer {
   min-block-size: 100vh;
@@ -286,6 +300,7 @@
   
 }
 
+/*Медиа запрос под 768px*/
 
 @media (max-width:768px) {
   .header__theme-menu {
@@ -340,6 +355,7 @@
   }
 }
 
+/*Медиа запрос под 375px*/
 
 @media (max-width:560px) {
  .header {
