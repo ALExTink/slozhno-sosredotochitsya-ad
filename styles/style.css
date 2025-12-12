@@ -10,6 +10,8 @@
   background-attachment: fixed;
 }
 
+/*Шапка*/
+
 .header {
   min-block-size: 100vh;
   padding: 20px;
@@ -17,6 +19,8 @@
   position: relative;
   grid-template-rows: 1fr min-content 1fr;
 }
+
+/*Кнопки навигации*/
 
 .header__theme-menu-list {
   display: flex;
@@ -31,6 +35,8 @@
   border: none;
   background: transparent;
 }
+
+/*Действия на кнопки*/
 
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -49,6 +55,8 @@
   border: 1px solid rgba(255, 0, 112, 0.40);
   cursor: pointer;
 }
+
+/*РЕС*/
 
 .decorative__element {
   position: absolute;
@@ -76,6 +84,8 @@
   filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
 
+/* Стили углов*/
+
 .frame::before {
   position: absolute;
   top: 0;
@@ -99,6 +109,8 @@
   block-size: 25px;
   margin: 20px;
 }
+
+/*Заголовок шапки*/
 
 .header__title {
   margin-left: -20px;
@@ -124,17 +136,23 @@
   align-self: center;
 }
 
+/*Дизайн заголовков всех секций*/
+
 .question__section-title {
   color: var(--btn-color);
   font-weight: 700;
-  line-height: 23.4px; 
+  line-height: 23.4px; /* 130% */
   font-size: var(--font-size);
 }
+
+/*Дизайн текста всех секций*/
 
 .question__section-answer-text {
   font-size: var(--font-size);
   color: var(--text-color);
 }
+
+/*Ссылки*/
 
 .question__section-answer-link {
   text-decoration: none;
@@ -153,6 +171,8 @@
   border: 1px solid var(--text-color);
 }
 
+/*Первая секция с вопросами*/
+
 .question__section__one {
   display: grid;
   grid-template-columns: 34% 66%;
@@ -170,6 +190,7 @@
   padding-block-end: 10px;
 }
 
+/*Вторая секция с вопросами*/
 
 .question__section-two {
   padding-block-start: 80px;
@@ -183,7 +204,6 @@
   gap: 20px;
   padding-block-start: 20px;
 }
-
 .question__section-title-two {
   max-inline-size: 315px;
 }
@@ -191,6 +211,8 @@
 .question__section-answer-title-two {
   margin-block-end: 10px;
 }
+
+/*Третья секция с вопросами*/
 
 .question__section__fhree {
   display: grid;
@@ -211,6 +233,8 @@
 .question__section-answer-text-fhree {
   padding-block-start: 10px;
 }
+
+/*Секция с картинками*/
 
 .question__section__image {
   padding-block-end: 60px;
@@ -256,6 +280,8 @@
   grid-column: 2 / 4;
 }
 
+/*Подвал*/
+
 .footer {
   min-block-size: 100vh;
   padding: 20px;
@@ -274,6 +300,7 @@
   
 }
 
+/*Медиа запрос под 768px*/
 
 @media (max-width:768px) {
   .header__theme-menu {
@@ -327,6 +354,8 @@
     justify-content: center;
   }
 }
+
+/*Медиа запрос под 375px*/
 
 @media (max-width:560px) {
  .header {
